@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    color: whitesmoke;
+    font-family: 'Bebas Neue', cursive;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: 300% 300%;
+    background-image: linear-gradient(
+          -45deg, 
+          rgba(59,173,227,1) 0%, 
+          rgba(87,111,230,1) 25%, 
+          rgba(152,68,183,1) 51%, 
+          rgb(198, 53, 255) 100%
+    );  
+    animation: AnimateBG 30s ease infinite;
+}
+@keyframes AnimateBG { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+#corpo{
+    position: relative;
+    margin: 150px auto;
+    padding: 0 0 50px 0;
+    border: 1px solid #fff;
+    width: 400px;
+    height: 450px;
+    text-align: center;
+    border-radius: 50px 0 50px 0;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.315);
+}
+#interaja{
+    margin-top: 30%;
+    font-size: 15pt;
+}
+.campo{
+    margin: 2%;
+    text-decoration: none;
+    border-radius: 8px;
+    border:1px solid #fff;
+    padding: 16px;
+    width: 75%;
+    background: none;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.212);
+    color: white;
+}
+::placeholder{
+    color: whitesmoke;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 15pt;
+}
+#btn_entrar{
+    margin: 2% 35px 0 0;
+    border: 1px solid #ffffff;
+    border-radius: 10px 0 10px 0;
+    color: #fff;
+    background: none;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.308);
+    margin-bottom: 20px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 15pt;
+    display: flex;
+    float: right; 
+    cursor: pointer;
+}
+#check_box{
+    display: flex;
+    float: left;
+    margin: 1% 0 0 30px;
+}
+#check{
+    text-decoration: none;
+    background-color: rgb(167, 3, 3);
+    border: 1px solid #fff;
+    width: 20px;
+    height: 18px;
+    margin-right: 15px;
+    opacity: 0.4;
+}
+#check:checked{
+    background-color: aqua;
+    opacity: 1;
+}
+.opcoes{
+    text-decoration: none;
+    color: #fff;
+    margin: 3%;
+}
+#icon{
+    display: flex;
+    float: left;
+    margin: 20px 0 0 45%;
+    width: 50px;
+    height: 50px;
+}
+#redes{
+    display: flex;
+    float: left;
+    margin: 0 0 6% 12%;
+}
+.icons{
+    margin: 0 10px 0 30px;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    color: white;
+}
+#rodape{
+    position: absolute;
+    text-align: center;
+    margin: 0 auto;
+    top: 90%;
+    font-style: italic;
+    font-size: 10pt;
+}
